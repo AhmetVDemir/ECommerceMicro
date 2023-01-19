@@ -1,21 +1,15 @@
 ﻿<Properties StartupConfiguration="{81C5EA66-B3F0-457F-B0BE-EF75033408E7}|http">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.src.Services.Products.ESourcing.Products PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Services/Sourcing/ESourcing.Sourcing/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.src.Services.Sourcing.ESourcing.Sourcing PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Services/Sourcing/ESourcing.Sourcing/Repositories/Concrete/AuctionRepository.cs">
     <Files>
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Controllers/BidController.cs" />
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Entities/Concrete/Auction.cs" />
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Entities/Concrete/Bid.cs" />
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Controllers/AuctionController.cs" />
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/appsettings.json" />
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Settings/Abstract/ISourcingDatabaseSettings.cs" />
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Settings/Concrete/SourcingDatabaseSettings.cs" Line="12" Column="1" />
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Program.cs" Line="13" Column="127" />
-      <File FileName="src/Services/Products/ESourcing.Products/Program.cs" Line="1" Column="1" />
+      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Data/Concrete/SourcingContext.cs" Line="21" Column="10" />
+      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Data/Concrete/SourcingContextSeed.cs" Line="91" Column="1" />
+      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Repositories/Abstract/IAuctionRepository.cs" Line="6" Column="37" />
+      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Repositories/Concrete/AuctionRepository.cs" Line="25" Column="50" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,16 +17,12 @@
           <Node name="ECommerceMicro" expanded="True">
             <Node name="src" expanded="True">
               <Node name="Services" expanded="True">
-                <Node name="Products" expanded="True">
-                  <Node name="ESourcing.Products" expanded="True" />
-                </Node>
                 <Node name="Sourcing" expanded="True">
                   <Node name="ESourcing.Sourcing" expanded="True">
-                    <Node name="Controllers" expanded="True" />
-                    <Node name="Settings" expanded="True">
+                    <Node name="Repositories" expanded="True">
+                      <Node name="Abstract" expanded="True" />
                       <Node name="Concrete" expanded="True" />
                     </Node>
-                    <Node name="Program.cs" selected="True" />
                   </Node>
                 </Node>
               </Node>
@@ -42,6 +32,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.src.Services.Sourcing.ESourcing.Sourcing PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

@@ -20,6 +20,9 @@
     <None Remove="Data\" />
     <None Remove="Data\Abstract\" />
     <None Remove="Data\Concrete\" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\Abstract\" />
+    <None Remove="Repositories\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -32,6 +35,9 @@
     <Folder Include="Data\" />
     <Folder Include="Data\Abstract\" />
     <Folder Include="Data\Concrete\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\Abstract\" />
+    <Folder Include="Repositories\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="2.18.0" />
