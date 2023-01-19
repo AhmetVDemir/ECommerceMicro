@@ -1119,7 +1119,8 @@
     ]
   },
   "packageFolders": {
-    "/Users/ahmetdemir/.nuget/packages/": {}
+    "/Users/ahmetdemir/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1130,6 +1131,9 @@
       "packagesPath": "/Users/ahmetdemir/.nuget/packages/",
       "outputPath": "/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Products/ESourcing.Products/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "/Users/ahmetdemir/.nuget/NuGet/NuGet.Config"
       ],

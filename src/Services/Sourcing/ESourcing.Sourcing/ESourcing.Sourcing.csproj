@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Entities\" />
+    <None Remove="MongoDB.Bson" />
+    <None Remove="MongoDB.Driver" />
+    <None Remove="Entities\Abstract\" />
+    <None Remove="Entities\Concrete\" />
+    <None Remove="Settings\" />
+    <None Remove="Settings\Abstract\" />
+    <None Remove="Settings\Concrete\" />
+    <None Remove="Data\" />
+    <None Remove="Data\Abstract\" />
+    <None Remove="Data\Concrete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Entities\Abstract\" />
+    <Folder Include="Entities\Concrete\" />
+    <Folder Include="Settings\" />
+    <Folder Include="Settings\Abstract\" />
+    <Folder Include="Settings\Concrete\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\Abstract\" />
+    <Folder Include="Data\Concrete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Bson" Version="2.18.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+  </ItemGroup>
+</Project>
