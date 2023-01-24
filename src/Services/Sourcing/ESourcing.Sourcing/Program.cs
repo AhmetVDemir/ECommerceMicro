@@ -17,6 +17,7 @@ builder.Services.Configure<SourcingDatabaseSettings>(builder.Configuration.GetSe
 builder.Services.AddSingleton<ISourcingDatabaseSettings>(sp=>sp.GetRequiredService<IOptions<SourcingDatabaseSettings>>().Value);
 builder.Services.AddTransient<ISourcingContext, SourcingContext>();
 builder.Services.AddTransient<IAuctionRepository, AuctionRepository>();
+builder.Services.AddTransient<IBidRepository, BidRepository>();
 
 #endregion
 var app = builder.Build();
