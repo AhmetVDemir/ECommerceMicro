@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata.Ecma335;
 using ESourcing.Sourcing.Data.Abstract;
 using ESourcing.Sourcing.Entities.Concrete;
 using ESourcing.Sourcing.Repositories.Abstract;
@@ -35,24 +36,26 @@ namespace ESourcing.Sourcing.Repositories.Concrete
             return deleteResult.IsAcknowledged && deleteResult.DeletedCount > 0;
         }
 
-        public Task<Auction> GetAuction(string id)
+        public async Task<Auction> GetAuction(string id)
         {
-            throw new NotImplementedException();
+            return await _context.Auctions.Find(x => x.Id == id).FirstOrDefaultAsync();
         }
 
-        public Task<Auction> GetAuctionByName(string name)
+        public async Task<Auction> GetAuctionByName(string name)
         {
-            throw new NotImplementedException();
+            FilterDefinition<Auction> filter = Builders<Auction>.Filter.Eq(n => n.Name, name);
+            return await _context.Auctions.Find(filter).FirstOrDefaultAsync();
         }
 
-        public Task<IEnumerable<Auction>> GetAuctions()
+        public async Task<IEnumerable<Auction>> GetAuctions()
         {
-            throw new NotImplementedException();
+            return await _context.Auctions.Find(a => true).ToListAsync();
         }
 
-        public Task<bool> Update(Auction auction)
+        public async Task<bool> Update(Auction auction)
         {
-            throw new NotImplementedException();
+            var updateResult = await _context.Auctions.ReplaceOneAsync(a => a.Id.Equals(auction.Id), auction);
+            return updateResult.IsAcknowledged && updateResult.ModifiedCount > 0;
         }
 
         #endregion

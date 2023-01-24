@@ -1,14 +1,9 @@
 ﻿<Properties StartupConfiguration="{81C5EA66-B3F0-457F-B0BE-EF75033408E7}|http">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.src.Services.Products.ESourcing.Products PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.ItemProperties.src.Services.Sourcing.ESourcing.Sourcing PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="src/Services/Sourcing/ESourcing.Sourcing/Repositories/Concrete/AuctionRepository.cs">
     <Files>
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Data/Concrete/SourcingContext.cs" Line="21" Column="10" />
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Data/Concrete/SourcingContextSeed.cs" Line="91" Column="1" />
-      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Repositories/Abstract/IAuctionRepository.cs" Line="6" Column="37" />
+      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Data/Concrete/SourcingContext.cs" />
+      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Data/Concrete/SourcingContextSeed.cs" />
+      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Repositories/Abstract/IAuctionRepository.cs" />
       <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Repositories/Concrete/AuctionRepository.cs" Line="25" Column="50" />
     </Files>
     <Pads>
@@ -19,6 +14,9 @@
               <Node name="Services" expanded="True">
                 <Node name="Sourcing" expanded="True">
                   <Node name="ESourcing.Sourcing" expanded="True">
+                    <Node name="Data" expanded="True">
+                      <Node name="Concrete" expanded="True" />
+                    </Node>
                     <Node name="Repositories" expanded="True">
                       <Node name="Abstract" expanded="True" />
                       <Node name="Concrete" expanded="True" />
@@ -32,7 +30,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.src.Services.Products.ESourcing.Products PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.src.Services.Sourcing.ESourcing.Sourcing PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

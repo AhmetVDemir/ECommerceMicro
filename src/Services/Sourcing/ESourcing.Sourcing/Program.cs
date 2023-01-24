@@ -1,5 +1,7 @@
 ﻿using ESourcing.Sourcing.Data.Abstract;
 using ESourcing.Sourcing.Data.Concrete;
+using ESourcing.Sourcing.Repositories.Abstract;
+using ESourcing.Sourcing.Repositories.Concrete;
 using ESourcing.Sourcing.Settings.Abstract;
 using ESourcing.Sourcing.Settings.Concrete;
 using Microsoft.Extensions.Options;
@@ -14,6 +16,7 @@ builder.Services.AddControllers();
 builder.Services.Configure<SourcingDatabaseSettings>(builder.Configuration.GetSection(nameof(SourcingDatabaseSettings)));
 builder.Services.AddSingleton<ISourcingDatabaseSettings>(sp=>sp.GetRequiredService<IOptions<SourcingDatabaseSettings>>().Value);
 builder.Services.AddTransient<ISourcingContext, SourcingContext>();
+builder.Services.AddTransient<IAuctionRepository, AuctionRepository>();
 
 #endregion
 var app = builder.Build();
