@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "tMVVN8hhr7G9CYn1ccpDpIbK0lqK3xIkD9AiPRsHD99igCGkxgU9QdTMoI/J01ix+/d3ruRU/0CIGOUPBKpnrA==",
+  "success": true,
+  "projectFilePath": "/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/EventBusRabbitMQ.csproj",
+  "expectedPackageFiles": [
+    "/Users/ahmetdemir/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/ahmetdemir/.nuget/packages/polly/7.2.3/polly.7.2.3.nupkg.sha512",
+    "/Users/ahmetdemir/.nuget/packages/rabbitmq.client/6.4.0/rabbitmq.client.6.4.0.nupkg.sha512",
+    "/Users/ahmetdemir/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/ahmetdemir/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
