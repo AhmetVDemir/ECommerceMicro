@@ -15,6 +15,9 @@
     <None Remove="Concrete\" />
     <None Remove="Microsoft.Extensions.Logging.Abstractions" />
     <None Remove="Polly" />
+    <None Remove="Events\Abstract\" />
+    <None Remove="Events\Concrete\" />
+    <None Remove="Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
@@ -22,10 +25,13 @@
     <Folder Include="Producer\" />
     <Folder Include="Abstract\" />
     <Folder Include="Concrete\" />
+    <Folder Include="Events\Abstract\" />
+    <Folder Include="Events\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
     <PackageReference Include="Polly" Version="7.2.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 </Project>

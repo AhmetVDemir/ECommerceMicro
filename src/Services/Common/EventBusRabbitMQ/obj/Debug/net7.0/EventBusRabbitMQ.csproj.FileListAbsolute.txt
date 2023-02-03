@@ -1,0 +1,12 @@
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/bin/Debug/net7.0/EventBusRabbitMQ.deps.json
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/bin/Debug/net7.0/EventBusRabbitMQ.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/bin/Debug/net7.0/EventBusRabbitMQ.pdb
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/obj/Debug/net7.0/EventBusRabbitMQ.csproj.AssemblyReference.cache
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/obj/Debug/net7.0/EventBusRabbitMQ.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/obj/Debug/net7.0/EventBusRabbitMQ.AssemblyInfoInputs.cache
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/obj/Debug/net7.0/EventBusRabbitMQ.AssemblyInfo.cs
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/obj/Debug/net7.0/EventBusRabbitMQ.csproj.CoreCompileInputs.cache
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/obj/Debug/net7.0/EventBusRabbitMQ.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/obj/Debug/net7.0/refint/EventBusRabbitMQ.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/obj/Debug/net7.0/EventBusRabbitMQ.pdb
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/obj/Debug/net7.0/ref/EventBusRabbitMQ.dll
