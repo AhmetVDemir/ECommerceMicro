@@ -1,2 +1,0 @@
-# ECommerceMicro
-netcoremicro
