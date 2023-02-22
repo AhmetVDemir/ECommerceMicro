@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eJl8xGikZHWros4Yz6MkpL3KZ/iCW4lJcoR2lLbndvtKRmbSiqcu8iATsRJczl8T0D0p/x6CB/6F7nUqXBGw5A==",
+  "dgSpecHash": "c/klN43FN10t3CRCiMR5lXn0a+fsY/OYk8RICkjl4/QsfR0+m1E/9aPvIqylQFgw+UvF8w2Lgsx78mzww176ew==",
   "success": true,
   "projectFilePath": "/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Common/EventBusRabbitMQ/EventBusRabbitMQ.csproj",
   "expectedPackageFiles": [
