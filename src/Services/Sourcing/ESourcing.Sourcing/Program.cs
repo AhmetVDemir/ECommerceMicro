@@ -23,8 +23,12 @@ builder.Services.AddTransient<ISourcingContext, SourcingContext>();
 builder.Services.AddTransient<IAuctionRepository, AuctionRepository>();
 builder.Services.AddTransient<IBidRepository, BidRepository>();
 
+//Automapper
+
+builder.Services.AddAutoMapper(typeof(Program));
 //Event Bus DI
 builder.Services.AddSingleton<IRabbitMQPersistentConnection>(pc => {
+    
 
     var logger = pc.GetRequiredService< ILogger<DefaultRabbitMQPersistentConnection>>();
     var factory = new ConnectionFactory()
@@ -42,10 +46,10 @@ builder.Services.AddSingleton<IRabbitMQPersistentConnection>(pc => {
         factory.HostName = builder.Configuration["EventBus:Password"];
     }
 
-    var retryCount = 5;
+    int retryCount = 5;
     if (!string.IsNullOrWhiteSpace(builder.Configuration["EventBus:RetryPolicy"]))
     {
-        retryCount = int.Parse(builder.Configuration["EventBus:RetryPolicy"]);
+        retryCount = int.Parse(builder.Configuration["EventBus:RetryPolicy"].ToString());
     }
 
     return new DefaultRabbitMQPersistentConnection(factory, retryCount, logger);

@@ -61,7 +61,7 @@ namespace EventBusRabbitMQ.Producer
 						);
 					channel.WaitForConfirmsOrDie();
 					channel.BasicAcks += (sender, eventArgs) => {
-						Console.WriteLine("Sending rabbitmq");
+						Console.WriteLine("Sending rabbitMQ");
 					};
 				});
 

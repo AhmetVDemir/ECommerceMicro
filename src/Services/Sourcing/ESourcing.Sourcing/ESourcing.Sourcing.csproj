@@ -23,6 +23,8 @@
     <None Remove="Repositories\" />
     <None Remove="Repositories\Abstract\" />
     <None Remove="Repositories\Concrete\" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Mapping\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -38,10 +40,12 @@
     <Folder Include="Repositories\" />
     <Folder Include="Repositories\Abstract\" />
     <Folder Include="Repositories\Concrete\" />
+    <Folder Include="Mapping\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="2.19.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\EventBusRabbitMQ\EventBusRabbitMQ.csproj">

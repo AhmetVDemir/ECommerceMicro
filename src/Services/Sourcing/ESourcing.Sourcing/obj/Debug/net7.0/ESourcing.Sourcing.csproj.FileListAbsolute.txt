@@ -36,3 +36,10 @@
 /Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/runtimes/osx/native/libmongocrypt.dylib
 /Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/runtimes/win/native/mongocrypt.dll
 /Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/obj/Debug/net7.0/ESourcing.Sourcing.csproj.CopyComplete
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/AWSSDK.Core.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/AWSSDK.SecurityToken.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/Polly.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/RabbitMQ.Client.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/EventBusRabbitMQ.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/EventBusRabbitMQ.pdb

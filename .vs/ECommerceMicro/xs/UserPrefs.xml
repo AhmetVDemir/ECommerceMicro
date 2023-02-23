@@ -1,6 +1,4 @@
-﻿<Properties StartupConfiguration="{C21C8E35-C6C1-4837-B926-FD8207479588}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.src.Services.Sourcing.ESourcing.Sourcing PreferredExecutionTarget="/Applications/Brave Browser.app" />
+﻿<Properties StartupConfiguration="{81C5EA66-B3F0-457F-B0BE-EF75033408E7}|http">
   <MonoDevelop.Ide.Workbench ActiveDocument="src/Services/Common/EventBusRabbitMQ/Producer/EventBusRabbitMQProducer.cs">
     <Files>
       <File FileName="src/Services/Common/EventBusRabbitMQ/Producer/EventBusRabbitMQProducer.cs" Line="28" Column="1" />
@@ -23,10 +21,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.src.Services.Products.ESourcing.Products PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.src.Services.Products.ESourcing.Products PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.ItemProperties.src.Services.Sourcing.ESourcing.Sourcing PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>

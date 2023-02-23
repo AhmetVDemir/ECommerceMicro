@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using AutoMapper;
 using ESourcing.Sourcing.Entities.Concrete;
 using ESourcing.Sourcing.Repositories.Abstract;
+using EventBusRabbitMQ.Core.Constants;
+using EventBusRabbitMQ.Events.Concrete;
+using EventBusRabbitMQ.Producer;
 using Microsoft.AspNetCore.Mvc;
-
-
+using MongoDB.Driver;
 
 namespace ESourcing.Sourcing.Controllers
 {
@@ -18,11 +21,17 @@ namespace ESourcing.Sourcing.Controllers
         #region Variables
 
         private readonly IAuctionRepository _auctionRepository;
+        private readonly IBidRepository _bidRepository;
         private readonly ILogger<AuctionController> _logger;
-        public AuctionController(IAuctionRepository auctionRepository, ILogger<AuctionController> logger)
+        private readonly EventBusRabbitMQProducer _eventBus;
+        private readonly IMapper _mapper;
+        public AuctionController(EventBusRabbitMQProducer eventBus, IMapper mapper,IAuctionRepository auctionRepository,IBidRepository bidRepository , ILogger<AuctionController> logger)
         {
+            _eventBus = eventBus;
             _auctionRepository = auctionRepository;
             _logger = logger;
+            _bidRepository = bidRepository;
+            _mapper = mapper;
         }
 
         #endregion
@@ -76,6 +85,52 @@ namespace ESourcing.Sourcing.Controllers
             return Ok(await _auctionRepository.Delete(id));
         }
 
+
+        [HttpPost("ComplateAuction")]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.Accepted)]
+        public async Task<ActionResult> ComplateAuction(string id)
+        {
+            Auction auction = await _auctionRepository.GetAuction(id);
+            if(auction == null)
+                return NotFound();
+            if(auction.Status != (int)Status.Active)
+            {
+                _logger.LogError("Mezat tamamlanmadı");
+                return BadRequest();
+            }
+
+            Bid bid = await _bidRepository.GetWinnerBid(id);
+            if (bid == null)
+            {
+                return NotFound();
+            }
+
+            OrderCreateEvent eventMessage = _mapper.Map<OrderCreateEvent>(bid);
+            eventMessage.Quantity = auction.Quantity;
+
+            auction.Status = (int)Status.Closed;
+
+            bool updateResponse = await _auctionRepository.Update(auction);
+            if (!updateResponse)
+            {
+                _logger.LogError("Metat güncellenemedi.");
+                return BadRequest();
+            }
+
+
+            try
+            {
+                _eventBus.Publish(EventBusConstants.OrderCreateQueue, eventMessage);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Hata : evet : {EventId} uygulama {AppName}", eventMessage.Id, "Sourcing");
+                throw;
+            }
+            return Accepted();
+        }
 
         #endregion
     }
