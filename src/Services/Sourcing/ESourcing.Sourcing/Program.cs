@@ -9,6 +9,7 @@ using EventBusRabbitMQ.Concrete;
 using EventBusRabbitMQ.Producer;
 using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,10 +23,9 @@ builder.Services.AddSingleton<ISourcingDatabaseSettings>(sp=>sp.GetRequiredServi
 builder.Services.AddTransient<ISourcingContext, SourcingContext>();
 builder.Services.AddTransient<IAuctionRepository, AuctionRepository>();
 builder.Services.AddTransient<IBidRepository, BidRepository>();
-
 //Automapper
-
 builder.Services.AddAutoMapper(typeof(Program));
+
 //Event Bus DI
 builder.Services.AddSingleton<IRabbitMQPersistentConnection>(pc => {
     
@@ -46,18 +46,22 @@ builder.Services.AddSingleton<IRabbitMQPersistentConnection>(pc => {
         factory.HostName = builder.Configuration["EventBus:Password"];
     }
 
+
     int retryCount = 5;
     if (!string.IsNullOrWhiteSpace(builder.Configuration["EventBus:RetryPolicy"]))
     {
-        retryCount = int.Parse(builder.Configuration["EventBus:RetryPolicy"].ToString());
+        retryCount = int.Parse(builder.Configuration["EventBus:RetryPolicy"]);
     }
 
-    return new DefaultRabbitMQPersistentConnection(factory, retryCount, logger);
+    return new DefaultRabbitMQPersistentConnection(factory, 5, logger);
 
 });
+
 builder.Services.AddSingleton<EventBusRabbitMQProducer>();
 
+
 #endregion
+
 var app = builder.Build();
 
 

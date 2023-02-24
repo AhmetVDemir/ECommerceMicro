@@ -15,7 +15,7 @@ namespace EventBusRabbitMQ.Concrete
 
         private readonly IConnectionFactory _connectionFactory;
         private IConnection _connection;
-        private readonly int _retryCount;
+        private  int _retryCount;
         private readonly ILogger<DefaultRabbitMQPersistentConnection> _logger;
         private bool _disposed;
 

@@ -43,3 +43,5 @@
 /Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/RabbitMQ.Client.dll
 /Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/EventBusRabbitMQ.dll
 /Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/EventBusRabbitMQ.pdb
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/AutoMapper.dll
+/Users/ahmetdemir/Desktop/Project/NetCoreMicro/ECommerceMicro/src/Services/Sourcing/ESourcing.Sourcing/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

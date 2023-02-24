@@ -1,7 +1,12 @@
 ﻿<Properties StartupConfiguration="{81C5EA66-B3F0-457F-B0BE-EF75033408E7}|http">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Services/Common/EventBusRabbitMQ/Producer/EventBusRabbitMQProducer.cs">
+  <MonoDevelop.Ide.ItemProperties.src.Services.Products.ESourcing.Products PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Services/Sourcing/ESourcing.Sourcing/Program.cs">
     <Files>
-      <File FileName="src/Services/Common/EventBusRabbitMQ/Producer/EventBusRabbitMQProducer.cs" Line="28" Column="1" />
+      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Controllers/AuctionController.cs" Line="155" Column="23" />
+      <File FileName="src/Services/Sourcing/ESourcing.Sourcing/Program.cs" Line="50" Column="24" />
+      <File FileName="src/Services/Common/EventBusRabbitMQ/Concrete/DefaultRabbitMQPersistentConnection.cs" Line="13" Column="66" />
+      <File FileName="src/Services/Common/EventBusRabbitMQ/Abstract/IRabbitMQPersistentConnection.cs" Line="6" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +16,15 @@
               <Node name="Services" expanded="True">
                 <Node name="Common" expanded="True">
                   <Node name="EventBusRabbitMQ" expanded="True">
+                    <Node name="Abstract" expanded="True" />
+                    <Node name="Concrete" expanded="True" />
                     <Node name="Producer" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Sourcing" expanded="True">
+                  <Node name="ESourcing.Sourcing" expanded="True">
+                    <Node name="Controllers" expanded="True" />
+                    <Node name="Mapping" expanded="True" />
                   </Node>
                 </Node>
               </Node>
@@ -21,10 +34,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.src.Services.Products.ESourcing.Products PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.ItemProperties.src.Services.Sourcing.ESourcing.Sourcing PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.src.Services.Sourcing.ESourcing.Sourcing PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>

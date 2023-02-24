@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
@@ -130,6 +131,30 @@ namespace ESourcing.Sourcing.Controllers
                 throw;
             }
             return Accepted();
+        }
+
+
+        [HttpPost("TestEvent")]
+        public ActionResult<OrderCreateEvent> TestEvent()
+        {
+
+            OrderCreateEvent eventMessage = new OrderCreateEvent();
+            eventMessage.AuctionId = "dummy1";
+            eventMessage.ProductId = "dummy_product_1";
+            eventMessage.Price = 10;
+            eventMessage.Quantity = 100;
+            eventMessage.SellerUserName = "deneme@deneme.com";
+
+            try
+            {
+                _eventBus.Publish(EventBusConstants.OrderCreateQueue, eventMessage);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Hata ! {EventId} {AppName} ", eventMessage.Id, "Sourcing");
+                throw;
+            }
+            return Accepted(eventMessage);
         }
 
         #endregion
